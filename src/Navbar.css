@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -54,6 +55,7 @@
 
 .custom-navbar {
     display: flex;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-bottom: 0.5rem;
 }
@@ -81,4 +83,23 @@
     border: 1px solid #cd2d2d;
     padding: 0.375rem 0.75rem;
     border-radius: 0.25rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom-navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-form {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
 }
